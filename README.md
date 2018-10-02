@@ -14,6 +14,6 @@ NOTE: Javascript functions are themselves objects, so, in that context, a method
 
 ## Arrow function expressions and 'this'
 
-Arrow functions do not have their own 'this' context, so they go up the chain to find 'this' declared.
+- Arrow functions do not have their own 'this' context, so they go up the chain to find the closest declared 'this'
 
-Arrow function expressions are best suited for non-method functions, and cannot be used as constructors.
+- Arrow function expressions are best suited for non-method functions, and cannot be used as constructors
