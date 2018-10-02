@@ -8,7 +8,7 @@
 
 - **Static Methods** which are tasks that can be performed *without the need of an object instance*
 
--- NOTE: Javascript functions are themselves objects, so, in that context, a method is actually an object reference to a function
+   NOTE: Javascript functions are themselves objects, so, in that context, a method is actually an object reference to a function
 
 
 
