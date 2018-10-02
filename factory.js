@@ -1,6 +1,7 @@
 /*
 - Factory Functions:
--- are any functions that RETURN an object literal that is not a Constructor Function or Class
+-- are any functions that is not a Constructor Function or Class
+-- are any functions that RETURN an object literal
 -- create, set up, and return an object
 -- the object returned is an instance of the factory function
 -- can use Object.create() to create an instance with a CUSTOM internal (dunder proto) __proto__ / [[Prototype]]
@@ -8,7 +9,11 @@
 */
 
 // EXAMPLE without custom internal prototype:
-// create function, do NOT use 'this'
+// - create function, do NOT use 'this'
+// - can use arrow function expression
+// - return the instance object {}
+// - then, create an instance withOUT the 'new' keyword by assigning that function to a var
+// - then, invoke functions on the object
 const puppyFactory = (name, breed) => ({
 	name,
 	breed,
@@ -41,6 +46,10 @@ donut.bark();
 // Ruff, Ruff
 
 // EXAMPLE with custom internal prototype:
+// - create custom prototype by creating an OBJECT
+// - create a function with an instance object using the custom prototype and assign properties to it and return that instance object {}
+// - then, create an instance withOUT the 'new' keyword by assigning that function to a var
+// - then, invoke functions on the object
 const internalPrototype = {
 	bark() {
 		console.log('Ruff, Ruff');
@@ -58,7 +67,7 @@ function puppyFactory2(name, breed) {
 	instance.name = name;
 	instance.breed = breed;
 
-	// funciton MUST RETURN object
+	// function MUST RETURN object
 	return instance;
 }
 

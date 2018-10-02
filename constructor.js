@@ -14,7 +14,10 @@
 */
 
 // EXAMPLE:
-// create function, use 'this' to define properies and methods
+// - create function, use 'this' to define properies and methods
+// - then, add functions to the functionName.prototype.methodName = ...
+// - then, create a new object instance & invoke the function using the 'new' keyword
+
 function Person(name) {
 	this.age = 0;
 	this.name = name;
