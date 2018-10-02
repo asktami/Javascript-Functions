@@ -1,7 +1,6 @@
-# javascript-functions
-Javascript Functions
+# Javascript Functions
 
-## A method is a functions which is a property of an object.
+## A method is a function which is a property of an object.
 
 ### There are 2 kinds of methods:
 
